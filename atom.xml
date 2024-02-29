@@ -6,7 +6,7 @@
   <link href="https://fangechao6.github.io/atom.xml" rel="self"/>
   
   <link href="https://fangechao6.github.io/"/>
-  <updated>2023-07-23T02:03:50.588Z</updated>
+  <updated>2023-08-06T06:53:39.325Z</updated>
   <id>https://fangechao6.github.io/</id>
   
   <author>
@@ -17,35 +17,434 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My New Post</title>
-    <link href="https://fangechao6.github.io/posts/177574ba.html"/>
-    <id>https://fangechao6.github.io/posts/177574ba.html</id>
-    <published>2023-07-23T01:26:31.000Z</published>
-    <updated>2023-07-23T02:03:50.588Z</updated>
+    <title>vue脚手架</title>
+    <link href="https://fangechao6.github.io/posts/33225426.html"/>
+    <id>https://fangechao6.github.io/posts/33225426.html</id>
+    <published>2023-08-06T05:49:20.000Z</published>
+    <updated>2023-08-06T06:53:39.325Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="脚手架文件结构"><a href="#脚手架文件结构" class="headerlink" title="脚手架文件结构"></a>脚手架文件结构</h2><pre><code>├── node_modules ├── public│   ├── favicon.ico: 页签图标│   └── index.html: 主页面├── src│   ├── assets: 存放静态资源│   │   └── logo.png│   │── component: 存放组件│   │   └── HelloWorld.vue│   │── App.vue: 汇总所有组件│   │── main.js: 入口文件├── .gitignore: git版本管制忽略的配置├── babel.config.js: babel的配置文件├── package.json: 应用包配置文件 ├── README.md: 应用描述文件├── package-lock.json：包版本控制文件</code></pre><h2 id="关于不同版本的Vue"><a href="#关于不同版本的Vue" class="headerlink" title="关于不同版本的Vue"></a>关于不同版本的Vue</h2><ol><li>vue.js与vue.runtime.xxx.js的区别：<ol><li>vue.js是完整版的Vue，包含：核心功能 + 模板解析器。</li><li>vue.runtime.xxx.js是运行版的Vue，只包含：核心功能；没有模板解析器。</li></ol></li><li>因为vue.runtime.xxx.js没有模板解析器，所以不能使用template这个配置项，需要使用render函数接收到的createElement函数去指定具体内容。</li></ol><h2 id="vue-config-js配置文件"><a href="#vue-config-js配置文件" class="headerlink" title="vue.config.js配置文件"></a>vue.config.js配置文件</h2><ol><li>使用vue inspect &gt; output.js可以查看到Vue脚手架的默认配置。</li><li>使用vue.config.js可以对脚手架进行个性化定制，详情见：<a href="https://cli.vuejs.org/zh">https://cli.vuejs.org/zh</a></li></ol><h2 id="ref属性"><a href="#ref属性" class="headerlink" title="ref属性"></a>ref属性</h2><ol><li>被用来给元素或子组件注册引用信息（id的替代者）</li><li>应用在html标签上获取的是真实DOM元素，应用在组件标签上是组件实例对象（vc）</li><li>使用方式：<ol><li>打标识：<code>&lt;h1 ref=&quot;xxx&quot;&gt;.....&lt;/h1&gt;</code> 或 <code>&lt;School ref=&quot;xxx&quot;&gt;&lt;/School&gt;</code></li><li>获取：<code>this.$refs.xxx</code></li></ol></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;脚手架文件结构&quot;&gt;&lt;a href=&quot;#脚手架文件结构&quot; class=&quot;headerlink&quot; title=&quot;脚手架文件结构&quot;&gt;&lt;/a&gt;脚手架文件结构&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;├── node_modules 
+├── public
+│   ├── favic</summary>
+      
     
     
     
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
     
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://fangechao6.github.io/posts/4a17b156.html"/>
-    <id>https://fangechao6.github.io/posts/4a17b156.html</id>
-    <published>2023-07-23T00:51:11.780Z</published>
-    <updated>2023-07-23T02:03:50.586Z</updated>
+    <title>Vue组件化编程</title>
+    <link href="https://fangechao6.github.io/posts/405bf84.html"/>
+    <id>https://fangechao6.github.io/posts/405bf84.html</id>
+    <published>2023-08-03T03:48:36.000Z</published>
+    <updated>2023-08-06T06:53:53.107Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="非单文件组件："><a href="#非单文件组件：" class="headerlink" title="非单文件组件："></a>非单文件组件：</h1><p>一个文件中包含n个组件</p><h1 id="单文件组件："><a href="#单文件组件：" class="headerlink" title="单文件组件："></a>单文件组件：</h1><p>一个文件中只包含有1个组件</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h1 id=&quot;非单文件组件：&quot;&gt;&lt;a href=&quot;#非单文件组件：&quot; class=&quot;headerlink&quot; title=&quot;非单文件组件：&quot;&gt;&lt;/a&gt;非单文件组件：&lt;/h1&gt;&lt;p&gt;一个文件中包含n个组件&lt;/p&gt;
+&lt;h1 id=&quot;单文件组件：&quot;&gt;&lt;a href=&quot;#单文件组件：&quot; </summary>
       
     
     
     
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue生命周期</title>
+    <link href="https://fangechao6.github.io/posts/b340e08.html"/>
+    <id>https://fangechao6.github.io/posts/b340e08.html</id>
+    <published>2023-08-03T03:02:18.000Z</published>
+    <updated>2023-08-06T06:53:46.145Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><p><img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png" alt=""></p><h1 id="创建阶段："><a href="#创建阶段：" class="headerlink" title="创建阶段："></a>创建阶段：</h1><ul><li>beforeCreate：在实例初始化之后，数据观测和事件配置之前调用。此时data和methods等还未初始化。</li><li>created：在实例创建完成后立即调用。数据已经初始化，可以在这个阶段对数据进行一些处理。</li></ul><h1 id="挂载阶段："><a href="#挂载阶段：" class="headerlink" title="挂载阶段："></a>挂载阶段：</h1><ul><li>beforeMount：在挂载开始之前被调用。此时模板编译已经完成，但还未把生成的DOM插入页面。</li><li>mounted：在挂载完成后调用。此时组件已经在DOM中插入，可以访问DOM元素，执行网络请求，以及其他一些需要在组件挂载后进行的操作。</li></ul><h1 id="更新阶段："><a href="#更新阶段：" class="headerlink" title="更新阶段："></a>更新阶段：</h1><ul><li>beforeUpdate：在数据更新之前调用，发生在虚拟DOM重新渲染和打补丁之前。可以用来在更新之前访问现有的DOM状态。</li><li>updated：在数据更新之后调用，虚拟DOM重新渲染和打补丁完成后触发。可以执行与更新后的DOM进行交互的任务。</li></ul><h1 id="销毁阶段："><a href="#销毁阶段：" class="headerlink" title="销毁阶段："></a>销毁阶段：</h1><ul><li>beforeDestroy：在实例销毁之前调用。可以在这里进行一些清理工作，如取消定时器、解绑全局事件等。</li><li>destroyed：在实例销毁后调用。此时Vue实例及其所有的事件监听器和子组件都已被销毁。</li></ul><h1 id="常用的生命周期钩子："><a href="#常用的生命周期钩子：" class="headerlink" title="常用的生命周期钩子："></a>常用的生命周期钩子：</h1><ol><li>mounted：发送ajax请求、启动定时器、绑定自定义事件、订阅消息等【初始化操作】。</li><li>beforeDestroy：清除定时器、解绑自定义事件、取消订阅小蝶等【收尾工作】</li></ol><h1 id="关于销毁Vue实例"><a href="#关于销毁Vue实例" class="headerlink" title="关于销毁Vue实例"></a>关于销毁Vue实例</h1><ol><li>销毁后借助Vue开发者工具看不到任何信息</li><li>销毁后自定义事件会失效、但原生DOM事件依然有效</li><li>一般不会在beforeDestroy中操作数据，因为即使操作数据，也不会在触发数据更新流程了</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;流程图&quot;&gt;&lt;a href=&quot;#流程图&quot; class=&quot;headerlink&quot; title=&quot;流程图&quot;&gt;&lt;/a&gt;流程图&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.c</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue中的指令</title>
+    <link href="https://fangechao6.github.io/posts/5cb25666.html"/>
+    <id>https://fangechao6.github.io/posts/5cb25666.html</id>
+    <published>2023-08-02T06:10:39.000Z</published>
+    <updated>2023-08-06T06:53:49.514Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Vue-中的指令"><a href="#Vue-中的指令" class="headerlink" title="Vue 中的指令"></a>Vue 中的指令</h1><p>指令是 Vue.js 中用于操作 DOM 的特殊属性。它们以 v- 前缀作为标识，可以用于向模板中添加交互和动态功能。</p><h2 id="v-bind-指令"><a href="#v-bind-指令" class="headerlink" title="v-bind 指令"></a>v-bind 指令</h2><p>v-bind 指令用于绑定元素属性和 Vue 实例的数据。它可以实现动态更新元素属性的值。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 将 message 绑定到元素的 title 属性 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-bind:title</span>=<span class="string">&quot;message&quot;</span>&gt;</span>悬停在我上面<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 缩写形式，等同于上面的写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">:title</span>=<span class="string">&quot;message&quot;</span>&gt;</span>悬停在我上面<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="v-on-指令"><a href="#v-on-指令" class="headerlink" title="v-on 指令"></a>v-on 指令</h2><p>v-on 指令用于监听 DOM 事件，并在事件触发时执行相应的方法。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在点击按钮时执行 handleClick 方法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">&quot;handleClick&quot;</span>&gt;</span>点击事件<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 缩写形式，等同于上面的写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;handleClick&quot;</span>&gt;</span>点击事件<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="v-if-和-v-show-指令"><a href="#v-if-和-v-show-指令" class="headerlink" title="v-if 和 v-show 指令"></a>v-if 和 v-show 指令</h2><p>v-if 和 v-show 指令都用于根据条件显示或隐藏元素，但有一些区别：</p><p>v-if：根据条件进行条件渲染。如果条件为假，元素将被完全从 DOM 中移除。<br>v-show：根据条件进行显示/隐藏切换。元素始终在 DOM 中，通过 CSS 的 display 属性来控制显示/隐藏。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 使用 v-if 条件渲染 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">&quot;isShow&quot;</span>&gt;</span></span><br><span class="line">  如果 isShow 为 true，这将被显示。如果为false则不会出现在dom中</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 使用 v-show 控制显示/隐藏 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-show</span>=<span class="string">&quot;isShow&quot;</span>&gt;</span></span><br><span class="line">  这个元素会根据 isVisible 的值来显示或隐藏，但始终在DOM中。</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="v-for-指令"><a href="#v-for-指令" class="headerlink" title="v-for 指令"></a>v-for 指令</h2><p>v-for 指令用于循环渲染列表数据，类似于 JavaScript 中的 forEach。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 循环渲染列表数据 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;item in items&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;item.id&quot;</span>&gt;</span>&#123;&#123; item.name &#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="v-model-指令"><a href="#v-model-指令" class="headerlink" title="v-model 指令"></a>v-model 指令</h2><p>v-model 指令用于在表单元素和 Vue 实例的数据之间进行双向数据绑定。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Copy code</span><br><span class="line"><span class="comment">&lt;!-- 将 input 的值与 message 数据进行双向绑定 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">&quot;message&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure><h2 id="v-cloak-指令"><a href="#v-cloak-指令" class="headerlink" title="v-cloak 指令"></a>v-cloak 指令</h2><p>v-cloak 指令用于在 Vue 实例加载前隐藏绑定的元素。它通常与 css 一起使用，以防止在页面加载时显示未渲染的模板。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-attr">[v-cloak]</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">display</span>: none;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-cloak</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 这里的内容会在Vue实例加载后显示 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="v-once-指令"><a href="#v-once-指令" class="headerlink" title="v-once 指令"></a>v-once 指令</h2><p>“once” 是 Vue.js 中用于事件绑定的修饰符之一。它可以应用于事件监听器，使得绑定的事件只在触发一次后立即解绑，之后不再执行。这意味着绑定的事件监听器将只在首次触发事件时执行，后续的事件触发将不再有响应。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click.once</span>=<span class="string">&quot;handleClick&quot;</span>&gt;</span>点击一次后解绑<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure><p>上述示例中，”v-on:click.once”指令告诉 Vue 在按钮点击事件首次触发时，执行 “handleClick” 方法。但随后再次点击按钮，该事件监听器将被自动解绑，因此不会再触发 “handleClick” 方法。</p><h3 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h3><p>“once” 指令特别适用于处理只需要执行一次的事件。例如，在展示欢迎提示或用户引导时，您可能只希望在用户首次访问页面时显示该提示，而不希望后续重复显示。</p><p>使用 “once” 修饰符可以有效地确保某个事件监听只在首次绑定时执行，避免了重复监听的性能开销和不必要的触发。</p><p>总结：”once”指令是 Vue.js 的修饰符之一，用于事件监听器，在首次触发事件时执行，之后自动解绑，不再响应后续事件触发。适用于处理只需执行一次的事件场景，如欢迎提示或引导提示。</p><h2 id="Vue-中的-“v-pre”-指令"><a href="#Vue-中的-“v-pre”-指令" class="headerlink" title="Vue 中的 “v-pre” 指令"></a>Vue 中的 “v-pre” 指令</h2><p>“v-pre” 是 Vue.js 中的一个特殊指令，用于在特定元素上标记它们不应该被 Vue 编译。当使用 “v-pre” 指令时，Vue 将跳过对该元素及其子元素的编译过程，保持元素原本的模板标记内容不被解析为 Vue 指令或表达式。</p><h3 id="用法示例"><a href="#用法示例" class="headerlink" title="用法示例"></a>用法示例</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-pre</span>&gt;</span></span><br><span class="line">  &#123;&#123; message &#125;&#125;</span><br><span class="line">  <span class="comment">&lt;!-- 这里的 &#123;&#123; message &#125;&#125; 将不会被Vue编译 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>上述示例中，<code>v-pre</code> 指令应用于 <code>&lt;div&gt;</code> 元素，使得其中的 <code>&#123;&#123; message &#125;&#125;</code> 不会被 Vue 解析为表达式，而保持原样展示在页面上。</p><h3 id="适用场景-1"><a href="#适用场景-1" class="headerlink" title="适用场景"></a>适用场景</h3><p>“v-pre” 指令通常用于以下情况：</p><ol><li>避免不必要的编译：在某些场景下，我们可能有一些模板代码包含了大量的双花括号表达式，但我们不希望 Vue 对它们进行解析和编译，因为这些表达式可能是在后台渲染的模板中使用的，或者被其他模板引擎处理的，我们只想将它们原封不动地展示在页面上。</li><li>加快编译速度：对于静态内容，使用 “v-pre” 可以减少 Vue 的编译工作量，提高编译速度。</li></ol><p>请注意，使用 “v-pre” 指令时，确保其中的表达式都是静态的，因为它们不会再受到 Vue 的响应式数据更新。</p><p>总结：”v-pre” 指令用于标记元素及其子元素不应该被 Vue 编译，保持其原始模板标记内容不受解析。它适用于避免不必要的编译和加快编译速度的场景。请确保其中的表达式是静态的，因为它们不会再受到 Vue 的响应式数据更新。</p><h1 id="Vue-自定义指令"><a href="#Vue-自定义指令" class="headerlink" title="Vue 自定义指令"></a>Vue 自定义指令</h1><p>Vue.js 允许您自定义指令，这是一种用于在 DOM 元素上添加特定行为的方式。自定义指令可以用于封装常见的 DOM 操作、事件处理、动画等，以便在 Vue 应用中重复使用。</p><h2 id="注册自定义指令"><a href="#注册自定义指令" class="headerlink" title="注册自定义指令"></a>注册自定义指令</h2><p>要注册自定义指令，您需要在 Vue 实例的 directives 选项中添加一个对象，该对象包含自定义指令的名称和相应的操作。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 示例自定义指令，将元素背景色设置为红色 </span></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">directive</span>(<span class="string">&#x27;red-bg&#x27;</span>, &#123;</span><br><span class="line">    <span class="title function_">inserted</span>(<span class="params">element</span>)&#123;</span><br><span class="line">        element.<span class="property">style</span>.<span class="property">backgroundColor</span> = <span class="string">&#x27;red&#x27;</span>; </span><br><span class="line">    &#125; </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="使用自定义指令"><a href="#使用自定义指令" class="headerlink" title="使用自定义指令"></a>使用自定义指令</h2><p>一旦您注册了自定义指令，您就可以在 Vue 模板中使用它们</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-red-bg</span>&gt;</span>这个元素的背景色将会变成红色<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>在上面的例子中，v-red-bg 是您自定义的指令名称，它将触发 inserted 钩子函数中的操作，将该元素的背景色设置为红色。</p><h3 id="钩子函数"><a href="#钩子函数" class="headerlink" title="钩子函数"></a>钩子函数</h3><p>自定义指令可以包含多个钩子函数，它们在指令的生命周期中执行特定操作。以下是一些常用的钩子函数：</p><ul><li>bind：在指令第一次绑定到元素时调用，只执行一次。</li><li>inserted：在绑定元素插入父节点时调用。</li><li>update：指令所在模板被重新解析时调用</li><li>componentUpdated：在包含组件的 VNode 和子 VNode 更新后调用。</li><li>unbind：在指令与元素解绑时调用。</li></ul><h2 id="传递参数"><a href="#传递参数" class="headerlink" title="传递参数"></a>传递参数</h2><p>您可以在自定义指令中传递参数，以便根据需要进行动态操作。参数可以通过指令表达式来传递</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-custom-dir</span>=<span class="string">&quot;42&quot;</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 输出：传递的参数是：42 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Vue</span>.<span class="title function_">directive</span>(<span class="string">&quot;custom-dir&quot;</span>, &#123;</span><br><span class="line">  <span class="title function_">bind</span>(<span class="params">element, binding</span>) &#123;</span><br><span class="line">    <span class="comment">// element是自定义指令修饰的真实的dom元素</span></span><br><span class="line">    <span class="comment">// 使用binding.value访问传递的参数</span></span><br><span class="line">    el.<span class="property">innerHTML</span> = <span class="string">`传递的参数是：<span class="subst">$&#123;binding.value&#125;</span>`</span>;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol><li>以上实例作用域全局局部写在vue实例内</li><li>指令定义时不加v-,但使用时加v-</li><li>指令名如果是多个单词，要使用kebab-case命名方式不要用camelCase命名</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Vue-中的指令&quot;&gt;&lt;a href=&quot;#Vue-中的指令&quot; class=&quot;headerlink&quot; title=&quot;Vue 中的指令&quot;&gt;&lt;/a&gt;Vue 中的指令&lt;/h1&gt;&lt;p&gt;指令是 Vue.js 中用于操作 DOM 的特殊属性。它们以 v- 前缀作为标识，可以用于向</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue检测数据变化的原理</title>
+    <link href="https://fangechao6.github.io/posts/88748b59.html"/>
+    <id>https://fangechao6.github.io/posts/88748b59.html</id>
+    <published>2023-08-01T03:28:45.000Z</published>
+    <updated>2023-08-06T06:53:35.674Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vue如何检测对象属性改变"><a href="#vue如何检测对象属性改变" class="headerlink" title="vue如何检测对象属性改变"></a>vue如何检测对象属性改变</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;vue如何检测对象属性改变&quot;&gt;&lt;a href=&quot;#vue如何检测对象属性改变&quot; class=&quot;headerlink&quot; title=&quot;vue如何检测对象属性改变&quot;&gt;&lt;/a&gt;vue如何检测对象属性改变&lt;/h1&gt;</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>列表过滤</title>
+    <link href="https://fangechao6.github.io/posts/b510980d.html"/>
+    <id>https://fangechao6.github.io/posts/b510980d.html</id>
+    <published>2023-07-31T10:53:45.000Z</published>
+    <updated>2023-08-06T06:53:21.552Z</updated>
+    
+    <content type="html"><![CDATA[<p>直接上代码<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>列表过滤<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;../js/vue.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;root&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h2</span>&gt;</span>人员列表<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">      请输入名字：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;keyWord&quot;</span> /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;person in filPersons&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;person.id&quot;</span>&gt;</span></span><br><span class="line">          &#123;&#123;person.name&#125;&#125; - &#123;&#123;person.age&#125;&#125; - &#123;&#123;person.sex&#125;&#125;</span><br><span class="line">        <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//用watch实现</span></span></span><br><span class="line"><span class="language-javascript">      <span class="comment">/* const vm = new Vue(&#123;</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        el: &quot;#root&quot;,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        data: &#123;</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">          keyWord: &quot;&quot;,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">          persons: [</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            &#123; id: &quot;001&quot;, name: &quot;马冬梅&quot;, age: 18, sex: &quot;女&quot; &#125;,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            &#123; id: &quot;002&quot;, name: &quot;周冬雨&quot;, age: 19, sex: &quot;女&quot; &#125;,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            &#123; id: &quot;003&quot;, name: &quot;周杰伦&quot;, age: 20, sex: &quot;男&quot; &#125;,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            &#123; id: &quot;004&quot;, name: &quot;温兆伦&quot;, age: 21, sex: &quot;男&quot; &#125;,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">          ],</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">          filPersons: [],</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        &#125;,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        watch: &#123;</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">          keyWord: &#123;</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            immediate: true,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            handler(val) &#123;</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">              this.filPersons = this.persons.filter((p) =&gt; &#123;</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">                return p.name.indexOf(val) !== -1;</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">              &#125;);</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            &#125;,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">          &#125;,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">        &#125;,</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">      &#125;); */</span></span></span><br><span class="line"><span class="language-javascript">      <span class="keyword">const</span> vm = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">el</span>:<span class="string">&#x27;#root&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">data</span>:&#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="attr">keyWord</span>: <span class="string">&quot;&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">            <span class="attr">persons</span>: [</span></span><br><span class="line"><span class="language-javascript">            &#123; <span class="attr">id</span>: <span class="string">&quot;001&quot;</span>, <span class="attr">name</span>: <span class="string">&quot;马冬梅&quot;</span>, <span class="attr">age</span>: <span class="number">18</span>, <span class="attr">sex</span>: <span class="string">&quot;女&quot;</span> &#125;,</span></span><br><span class="line"><span class="language-javascript">            &#123; <span class="attr">id</span>: <span class="string">&quot;002&quot;</span>, <span class="attr">name</span>: <span class="string">&quot;周冬雨&quot;</span>, <span class="attr">age</span>: <span class="number">19</span>, <span class="attr">sex</span>: <span class="string">&quot;女&quot;</span> &#125;,</span></span><br><span class="line"><span class="language-javascript">            &#123; <span class="attr">id</span>: <span class="string">&quot;003&quot;</span>, <span class="attr">name</span>: <span class="string">&quot;周杰伦&quot;</span>, <span class="attr">age</span>: <span class="number">20</span>, <span class="attr">sex</span>: <span class="string">&quot;男&quot;</span> &#125;,</span></span><br><span class="line"><span class="language-javascript">            &#123; <span class="attr">id</span>: <span class="string">&quot;004&quot;</span>, <span class="attr">name</span>: <span class="string">&quot;温兆伦&quot;</span>, <span class="attr">age</span>: <span class="number">21</span>, <span class="attr">sex</span>: <span class="string">&quot;男&quot;</span> &#125;,</span></span><br><span class="line"><span class="language-javascript">          ],</span></span><br><span class="line"><span class="language-javascript">          </span></span><br><span class="line"><span class="language-javascript">        &#125;,</span></span><br><span class="line"><span class="language-javascript">        <span class="attr">computed</span>:&#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="title function_">filPersons</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">                <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">persons</span>.<span class="title function_">filter</span>(<span class="function">(<span class="params">p</span>)=&gt;</span>&#123;</span></span><br><span class="line"><span class="language-javascript">                    <span class="keyword">return</span> p.<span class="property">name</span>.<span class="title function_">indexOf</span>(<span class="variable language_">this</span>.<span class="property">keyWord</span>)!==-<span class="number">1</span></span></span><br><span class="line"><span class="language-javascript">                &#125;)</span></span><br><span class="line"><span class="language-javascript">            &#125;</span></span><br><span class="line"><span class="language-javascript">          &#125;</span></span><br><span class="line"><span class="language-javascript">      &#125;)</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;直接上代码&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>列表渲染</title>
+    <link href="https://fangechao6.github.io/posts/b39a6957.html"/>
+    <id>https://fangechao6.github.io/posts/b39a6957.html</id>
+    <published>2023-07-31T06:44:23.000Z</published>
+    <updated>2023-08-06T06:53:28.027Z</updated>
+    
+    <content type="html"><![CDATA[<p>v- for</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;v- for&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>条件渲染</title>
+    <link href="https://fangechao6.github.io/posts/42e61835.html"/>
+    <id>https://fangechao6.github.io/posts/42e61835.html</id>
+    <published>2023-07-31T06:21:47.000Z</published>
+    <updated>2023-07-31T06:33:47.908Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="条件渲染"><a href="#条件渲染" class="headerlink" title="条件渲染"></a>条件渲染</h1><ol><li>v-if v-else-if  v-else<ul><li>不能破坏连续性</li><li>会影响dom树（不符合条件的不会体现在代码中）例如if不成立的话就会获取不到节点</li></ul></li><li>v-show<ul><li>通过display属性来进行显示隐藏</li></ul></li><li>template模板不影响结构<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">&quot;n===1&quot;</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">&quot;n===1&quot;</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">&quot;n===1&quot;</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>可以改为<br>```html<template v-if="n===1"> <div>1</div> <div>2</div> <div>3</div></template></li></ol><p>```不影响结构</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;条件渲染&quot;&gt;&lt;a href=&quot;#条件渲染&quot; class=&quot;headerlink&quot; title=&quot;条件渲染&quot;&gt;&lt;/a&gt;条件渲染&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;v-if v-else-if  v-else&lt;ul&gt;
+&lt;li&gt;不能破坏连续性&lt;/li&gt;
+&lt;li&gt;会影响dom树（</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HDFS</title>
+    <link href="https://fangechao6.github.io/posts/5c36621f.html"/>
+    <id>https://fangechao6.github.io/posts/5c36621f.html</id>
+    <published>2023-07-30T05:05:01.000Z</published>
+    <updated>2023-07-31T06:33:47.904Z</updated>
+    
+    
+    
+    
+    <category term="hadoop" scheme="https://fangechao6.github.io/categories/hadoop/"/>
+    
+    <category term="HDFS" scheme="https://fangechao6.github.io/categories/hadoop/HDFS/"/>
+    
+    
+    <category term="hadoop" scheme="https://fangechao6.github.io/tags/hadoop/"/>
+    
+    <category term="大数据" scheme="https://fangechao6.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    <category term="HDFS" scheme="https://fangechao6.github.io/tags/HDFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大数据面试题hadoop相关</title>
+    <link href="https://fangechao6.github.io/posts/f2de103c.html"/>
+    <id>https://fangechao6.github.io/posts/f2de103c.html</id>
+    <published>2023-07-29T06:41:45.000Z</published>
+    <updated>2023-07-29T06:49:01.493Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、常用端口号"><a href="#一、常用端口号" class="headerlink" title="一、常用端口号"></a>一、常用端口号</h1><ol><li>hadoop3.x<ul><li>HDFS NameNode 内部通常端口:8020/9000/9820</li><li>HDFS NameNode 对用户查询端口: 9870</li><li>Yarn查看任务运行情况:8088</li><li>历史服务器：19888</li></ul></li><li>hadoop2.x <ul><li>HDFS NameNode 内部通常端口:8020/9000</li><li>HDFS NameNode 对用户查询端口: 50070</li><li>Yarn查看任务运行情况:8088</li><li>历史服务器：19888<h1 id="二、常用配置文件"><a href="#二、常用配置文件" class="headerlink" title="二、常用配置文件"></a>二、常用配置文件</h1>3.x <strong>core-site.xml hdfs-site.xml yarn-site.xml mapred-site.xml workers</strong><br>2.x <strong>core-site.xml hdfs-site.xml yarn-site.xml mapred-site.xml slaves</strong></li></ul></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、常用端口号&quot;&gt;&lt;a href=&quot;#一、常用端口号&quot; class=&quot;headerlink&quot; title=&quot;一、常用端口号&quot;&gt;&lt;/a&gt;一、常用端口号&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;hadoop3.x&lt;ul&gt;
+&lt;li&gt;HDFS NameNode 内部通常端口:8020/</summary>
+      
+    
+    
+    
+    <category term="hadoop" scheme="https://fangechao6.github.io/categories/hadoop/"/>
+    
+    
+    <category term="hadoop" scheme="https://fangechao6.github.io/tags/hadoop/"/>
+    
+    <category term="大数据" scheme="https://fangechao6.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装完全分布式运行环境</title>
+    <link href="https://fangechao6.github.io/posts/bf83ba3c.html"/>
+    <id>https://fangechao6.github.io/posts/bf83ba3c.html</id>
+    <published>2023-07-27T02:23:09.000Z</published>
+    <updated>2023-07-29T06:42:40.165Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>scp安全拷贝基本语法（服务器之间拷贝数据）<br><img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230727103606.png" alt=""></li><li>rsync远程同步工具（主要用于备份镜像。具有速度快、避免赋值相同内容和支持符号链接的优点）<ul><li>基本语法<img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230727104311.png" alt=""></li></ul></li><li><p>xsync集群分发脚本</p><ul><li><p>期望脚本在任何路径都能使用（脚本放在声明了全局环境变量的路径）<br>echo $PATH<br>/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/atguigu/.local/bin:/home/atguigu/bin:/opt/module/jdk1.8.0_212/bin</p></li><li></li><li><p>在/home/atguigu/bin目录下创建xsync文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">  #!/bin/bash</span><br><span class="line"></span><br><span class="line">#1. 判断参数个数</span><br><span class="line">if [ $# -lt 1 ]</span><br><span class="line">then</span><br><span class="line">    echo Not Enough Arguement!</span><br><span class="line">    exit;</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">#2. 遍历集群所有机器</span><br><span class="line">for host in hadoop102 hadoop103 hadoop104</span><br><span class="line">do</span><br><span class="line">    echo ====================  $host  ====================</span><br><span class="line">    #3. 遍历所有目录，挨个发送</span><br><span class="line"></span><br><span class="line">    for file in $@</span><br><span class="line">    do</span><br><span class="line">        #4. 判断文件是否存在</span><br><span class="line">        if [ -e $file ]</span><br><span class="line">            then</span><br><span class="line">                #5. 获取父目录</span><br><span class="line">                pdir=$(cd -P $(dirname $file); pwd)</span><br><span class="line"></span><br><span class="line">                #6. 获取当前文件的名称</span><br><span class="line">                fname=$(basename $file)</span><br><span class="line">                ssh $host &quot;mkdir -p $pdir&quot;</span><br><span class="line">                rsync -av $pdir/$fname $host:$pdir</span><br><span class="line">            else</span><br><span class="line">                echo $file does not exists!</span><br><span class="line">        fi</span><br><span class="line">    done</span><br><span class="line">done</span><br></pre></td></tr></table></figure></li><li>执行以下命令chmod +x xsync</li></ul></li></ol><h1 id="无密登录"><a href="#无密登录" class="headerlink" title="无密登录"></a>无密登录</h1><ul><li>执行命令ssh localhost </li><li>进入home/xxx/.ssh</li><li>执行ssh-keygen -t rsa生成公私钥</li><li>执行ssh-copy-id 目标机器</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;scp安全拷贝基本语法（服务器之间拷贝数据）&lt;br&gt;&lt;img src=&quot;https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230727103606.png&quot; alt=&quot;&quot;</summary>
+      
+    
+    
+    
+    <category term="hadoop" scheme="https://fangechao6.github.io/categories/hadoop/"/>
+    
+    
+    <category term="hadoop" scheme="https://fangechao6.github.io/tags/hadoop/"/>
+    
+    <category term="大数据" scheme="https://fangechao6.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vmware centos7.5安装配置</title>
+    <link href="https://fangechao6.github.io/posts/4f3227e6.html"/>
+    <id>https://fangechao6.github.io/posts/4f3227e6.html</id>
+    <published>2023-07-26T03:45:46.000Z</published>
+    <updated>2023-07-29T00:14:04.004Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vm安装"><a href="#vm安装" class="headerlink" title="vm安装"></a>vm安装</h1><ol><li>打开<a href="https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html">官网</a>下载</li><li>傻瓜式安装 根据自己电脑配置创建新的虚拟机  </li></ol><ul><li>设置安装文件存储位置<img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726120015.png" alt=""></li><li>选择iso镜像文件 <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726120219.png" alt=""></li><li>启动<h1 id="cetos安装"><a href="#cetos安装" class="headerlink" title="cetos安装"></a>cetos安装</h1></li><li>选择中文语言 <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726120326.png" alt=""></li><li>修改日期和时间 <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726120417.png" alt=""></li><li>选择安装位置（也可以默认安装） <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726120519.png" alt=""><br>添加新的挂载点 <ol><li>/boot 1G 文件系统ext4 </li><li>swap（虚拟内存） 4G 文件系统swap</li><li>/(根目录) 45G 文件系统xfs<br>1+4+45刚好等于分配的50G内存</li></ol></li><li>KDUMP（备份）按需开启</li><li>配置主机名</li><li>安全策略默认(打开)</li><li>配置密码</li><li>重启后傻瓜式安装</li><li>打开编辑器-&gt;虚拟网络编辑器 <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726132936.png" alt=""></li><li><p>选择vmnet8更改设置<br><img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726133120.png" alt=""><br>选择vmnet8修改子网ip<img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726133258.png" alt=""><br>修改nat设置<img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726133647.png" alt=""><br>打开windows以太网，更改适配器选项选项vmnet8<img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726133854.png" alt=""></p><p>修改网关vim /etc/sysconfig/network-scripts/ifcfg-ens33 <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726134731.png" alt=""><br>主机名称vim /etc/hostname （自己按需修改）<br>reboot后切换root用户登录终端输入ifconfig查看ip是否修改成功，输入hostname查看主机名称是否修改成功</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;vm安装&quot;&gt;&lt;a href=&quot;#vm安装&quot; class=&quot;headerlink&quot; title=&quot;vm安装&quot;&gt;&lt;/a&gt;vm安装&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;打开&lt;a href=&quot;https://www.vmware.com/products/workstation-p</summary>
+      
+    
+    
+    
+    <category term="vmware" scheme="https://fangechao6.github.io/categories/vmware/"/>
+    
+    
+    <category term="vmware" scheme="https://fangechao6.github.io/tags/vmware/"/>
+    
+    <category term="centos" scheme="https://fangechao6.github.io/tags/centos/"/>
+    
+    <category term="linux" scheme="https://fangechao6.github.io/tags/linux/"/>
+    
+    <category term="hadoop" scheme="https://fangechao6.github.io/tags/hadoop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>yarn入门</title>
+    <link href="https://fangechao6.github.io/posts/9236725a.html"/>
+    <id>https://fangechao6.github.io/posts/9236725a.html</id>
+    <published>2023-07-26T01:13:54.000Z</published>
+    <updated>2023-07-29T00:14:04.006Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="YARN架构概述"><a href="#YARN架构概述" class="headerlink" title="YARN架构概述"></a>YARN架构概述</h1><ol><li>YetAnother Resource Negotiator简称YARN，另一种资源协调者，是Hadoop的资源管理器<ol><li>ResourceManager（RM）：整个集群资源（cpu内存等）的老大</li><li>NodeManager（NM）：单节点服务器资源老大</li><li>ApplicationManager（AM）单个任务运行的老大</li><li>Container：容器，相当于一台独立服务器，里面封装了任务运行所需要的资源，<strong>如内存、cpu、磁盘、网络等</strong></li></ol></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;YARN架构概述&quot;&gt;&lt;a href=&quot;#YARN架构概述&quot; class=&quot;headerlink&quot; title=&quot;YARN架构概述&quot;&gt;&lt;/a&gt;YARN架构概述&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;YetAnother Resource Negotiator简称YARN，另一种</summary>
+      
+    
+    
+    
+    <category term="大数据" scheme="https://fangechao6.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    
+    <category term="hadoop" scheme="https://fangechao6.github.io/tags/hadoop/"/>
+    
+    <category term="yarn" scheme="https://fangechao6.github.io/tags/yarn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hadoop入门</title>
+    <link href="https://fangechao6.github.io/posts/67914616.html"/>
+    <id>https://fangechao6.github.io/posts/67914616.html</id>
+    <published>2023-07-25T09:39:05.000Z</published>
+    <updated>2023-07-29T07:41:07.268Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><ol><li>Hadoop是什么<ul><li>Hadoop Apache基金会开发的分布式系统基础架构 Hadoop主要解决海量数据的存储和海量数据的分析计算</li></ul></li><li>Hadoop发展历史<ul><li>创始人Doug Cutting为了实现Google类似的全文检索功能,基于Lucene框架进行优化查询</li><li>2001年成底Lucene为Apache基金会的一个子项目</li><li>对于海量数据的场景，Lucene框架面对Google同样的困难，<strong>存储海量数据困难，检索海量数据慢</strong></li><li>学习和模仿Google解决这些问题的办法：微型版Nutch</li><li>2003-2004年google公开了不跟GFS和MapReduce思想的细节，以此为基础Doug Vutting等人用两年业余时间实现了DFS和MapReduce机制，使Nutch性能飙升</li><li>2005年Hadoop作为Lucene的子项目Nutch的一部分正式引入Apache基金会</li><li>2006年三月份Map-Reduce和Nutch Distributed File System (NDFS) 分别被纳入到Hadoop项目中，Hadoop就此诞生，标志着大数据时代来临</li><li>名字来源于Doug Cutting儿子的玩具大象 </li></ul></li><li>Hadoop三大发行版本：Apache、Cloudera、Hortonworks。<ul><li>Apache版本最原始（最基础）的版本，对于入门学习最好  2006年</li><li>Cloudera内部集成了很多大数据框架，对应产品CDH。2008</li><li>Hortonworks 文档较好，对应产品HDP。 2011</li><li>Hortonworks现在已经被Cloudera公司收购，推出新的品牌CDP</li></ul></li><li>Hadoop优势<ul><li>高可靠性：Hadoop底层维护多个数据副本，所以及时和Hadoop某个计算元素或存储出现故障，也不会导致数据的丢失  <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230725180729.png" alt=""></li><li>高扩展性：在集群间分配任务数据，可方便的扩展数以千计的节点  <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230725180851.png" alt="">  <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230725180937.png" alt=""></li><li>高效性：在MapReduce的思想下，Hadoop是并行工作的，以加快任务处理速度  <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230725181139.png" alt=""></li><li>高容错性：能够自动将失败的任务重新分配  <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230725181232.png" alt=""></li></ul></li><li>Hadoop组成（重点）<br> <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230725181536.png" alt=""><ul><li>HDFS架构概述<ol><li>Hadoop Distributed File System，简称HDFS，是一个分布式文件系统。  <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230725182106.png" alt=""><ul><li>NameNode(nm):存储文件的元数据，如文件名，文件目录结构，文件属性（生成时间、副本数、文件权限），以及每个文件的块列表所在的DatNode等</li><li>DataNode(dn)在本地文件系统存储文件块数据，以及块数据的校验和</li><li>Secondary NameNode（2nn）：每隔一段时间对NameNode元数据备份<br><br>形象图  <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230725182530.png" alt=""></li></ul></li><li><a href="yarn%E5%85%A5%E9%97%A8.md">yarn架构概述</a><ul><li><img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726092939.png" alt=""></li></ul></li><li>MapReduce<ul><li><img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726093200.png" alt=""></li></ul></li><li>JDFS、YARN、MapReduce三者关系<ul><li><img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726094014.png" alt=""></li></ul></li></ol></li></ul></li><li>大数据技术生态体系<ul><li><img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230726094907.png" alt=""></li></ul></li><li>推荐系统案例  <ul><li><h1 id="环境准备-前戏"><a href="#环境准备-前戏" class="headerlink" title="环境准备(前戏)"></a>环境准备(前戏)</h1></li></ul></li><li>模板虚拟机的准备</li><li>克隆</li><li>安装JDK、Hadoop<h1 id="Hadoop生产集群搭建"><a href="#Hadoop生产集群搭建" class="headerlink" title="Hadoop生产集群搭建"></a>Hadoop生产集群搭建</h1><h2 id="本地模式"><a href="#本地模式" class="headerlink" title="本地模式"></a>本地模式</h2><h2 id="完全分布式集群-重点"><a href="#完全分布式集群-重点" class="headerlink" title="完全分布式集群*重点"></a>完全分布式集群*重点</h2><h2 id="配置历史服务器"><a href="#配置历史服务器" class="headerlink" title="配置历史服务器"></a>配置历史服务器</h2><ul><li><ol><li>vim mapred-site.xml   <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 历史服务器端地址 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">name</span>&gt;</span>mapreduce.jobhistory.address<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">value</span>&gt;</span>hadoop102:10020<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 历史服务器web端地址 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">name</span>&gt;</span>mapreduce.jobhistory.webapp.address<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">value</span>&gt;</span>hadoop102:19888<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">```  </span><br><span class="line">+ 2. 配置完成记得分发  xsync $HADOOP_HOME/etc/hadoop/mapred-site.xml</span><br><span class="line">+ 3. 配置日志聚集功能 配置yarn-site.xml</span><br><span class="line">```xml </span><br><span class="line"><span class="comment">&lt;!-- 开启日志聚集功能 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.log-aggregation-enable<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">value</span>&gt;</span>true<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 设置日志聚集服务器地址 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span>&gt;</span>  </span><br><span class="line">      <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.log.server.url<span class="tag">&lt;/<span class="name">name</span>&gt;</span>  </span><br><span class="line">      <span class="tag">&lt;<span class="name">value</span>&gt;</span>http://hadoop102:19888/jobhistory/logs<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!-- 设置日志保留时间为7天 --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.log-aggregation.retain-seconds<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">value</span>&gt;</span>604800<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ol></li><li>xsync分发配置<h2 id="集群遭到破坏"><a href="#集群遭到破坏" class="headerlink" title="集群遭到破坏"></a>集群遭到破坏</h2></li><li><ol><li>停掉进程</li></ol></li><li><ol><li>删除集群内的data 和logs文件夹</li></ol></li><li><ol><li>格式化hdfs namenode -format</li></ol></li><li><ol><li>启动集群<h2 id="集群启动和停止方式总结"><a href="#集群启动和停止方式总结" class="headerlink" title="集群启动和停止方式总结"></a>集群启动和停止方式总结</h2></li></ol></li></ul><ol><li>各个模块分开启动/停止（配置ssh是前提）常用</li></ol><ul><li>整体启动/停止HDFS<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start-dfs.sh/stop-dfs.sh     </span><br></pre></td></tr></table></figure></li><li>整体启动/停止YARN<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start-yarn.sh/stop-yarn.sh</span><br></pre></td></tr></table></figure></li></ul><ol><li>各个服务组件逐一启动/停止</li></ol><ul><li>分别启动/停止HDFS组件<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hdfs --daemon start/stop namenode/datanode/secondarynamenode</span><br></pre></td></tr></table></figure></li><li>启动/停止YARN<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn --daemon start/stop  resourcemanager/nodemanager</span><br></pre></td></tr></table></figure><h2 id="编写Hadoop集群常用脚本"><a href="#编写Hadoop集群常用脚本" class="headerlink" title="编写Hadoop集群常用脚本"></a>编写Hadoop集群常用脚本</h2></li></ul><ol><li>Hadoop集群启停脚本（包含HDFS，Yarn，Historyserver） vim home/fangechao6/bin/vim myhadoop.sh<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">if [ $# -lt 1 ]</span><br><span class="line">then</span><br><span class="line">   echo &quot;No Args Input...&quot;</span><br><span class="line">   exit ;</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">case $1 in</span><br><span class="line">&quot;start&quot;)</span><br><span class="line">      echo &quot; =================== 启动 hadoop集群 ===================&quot;</span><br><span class="line"></span><br><span class="line">      echo &quot; --------------- 启动 hdfs ---------------&quot;</span><br><span class="line">      ssh hadoop102 &quot;/opt/module/hadoop-3.1.3/sbin/start-dfs.sh&quot;</span><br><span class="line">      echo &quot; --------------- 启动 yarn ---------------&quot;</span><br><span class="line">      ssh hadoop103 &quot;/opt/module/hadoop-3.1.3/sbin/start-yarn.sh&quot;</span><br><span class="line">      echo &quot; --------------- 启动 historyserver ---------------&quot;</span><br><span class="line">      ssh hadoop102 &quot;/opt/module/hadoop-3.1.3/bin/mapred --daemon start historyserver&quot;</span><br><span class="line">;;</span><br><span class="line">&quot;stop&quot;)</span><br><span class="line">      echo &quot; =================== 关闭 hadoop集群 ===================&quot;</span><br><span class="line"></span><br><span class="line">      echo &quot; --------------- 关闭 historyserver ---------------&quot;</span><br><span class="line">      ssh hadoop102 &quot;/opt/module/hadoop-3.1.3/bin/mapred --daemon stop historyserver&quot;</span><br><span class="line">      echo &quot; --------------- 关闭 yarn ---------------&quot;</span><br><span class="line">      ssh hadoop103 &quot;/opt/module/hadoop-3.1.3/sbin/stop-yarn.sh&quot;</span><br><span class="line">      echo &quot; --------------- 关闭 hdfs ---------------&quot;</span><br><span class="line">      ssh hadoop102 &quot;/opt/module/hadoop-3.1.3/sbin/stop-dfs.sh&quot;</span><br><span class="line">;;</span><br><span class="line">*)</span><br><span class="line">   echo &quot;Input Args Error...&quot;</span><br><span class="line">;;</span><br><span class="line">esac</span><br></pre></td></tr></table></figure></li><li>查看三台服务器Java进程脚本：jpsall  vim/home/fangechao6/bin/jpsall<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/bash</span></span><br><span class="line"></span><br><span class="line">for host in hadoop102 hadoop103 hadoop104</span><br><span class="line">do</span><br><span class="line">      echo =============== $host ===============</span><br><span class="line">      ssh $host jps </span><br><span class="line">done</span><br></pre></td></tr></table></figure><h2 id="集群时间同步"><a href="#集群时间同步" class="headerlink" title="集群时间同步"></a>集群时间同步</h2><strong>如果服务器在公网环境（能连接外网），可以不采用集群时间同步，因为服务器会定期和公网时间进行校准；<br>如果服务器在内网环境，必须要配置集群时间同步，否则时间久了，会产生时间偏差，导致集群执行任务时间不同步。</strong></li></ol></li><li><p>被同步时间服务器执行以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl status ntpd</span><br><span class="line">sudo systemctl start ntpd</span><br><span class="line">sudo systemctl is-enabled ntpd</span><br></pre></td></tr></table></figure><p>修改服务器的ntp.conf配置文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/ntp.conf</span><br></pre></td></tr></table></figure><p>找到 </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#restrict 192.168.10.0 mask 255.255.255.0 nomodify notrap</span><br></pre></td></tr></table></figure><p>改为</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">restrict 192.168.10.0 mask 255.255.255.0 nomodify notrap</span><br></pre></td></tr></table></figure><p>注释或删除以下代码 </p><figure class="highlight plaintext"><figcaption><span>0.centos.pool.ntp.org iburst</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server 1.centos.pool.ntp.org iburst</span><br><span class="line">server 2.centos.pool.ntp.org iburst</span><br><span class="line">server 3.centos.pool.ntp.org iburst**</span><br><span class="line">文件末尾追加 **server 127.127.1.0</span><br><span class="line">fudge 127.127.1.0 stratum 10</span><br></pre></td></tr></table></figure><p>修改hadoop102的/etc/sysconfig/ntpd 文件添加如下代码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#让硬件时间与系统时间一起同步</span><br><span class="line">SYNC_HWCLOCK=yes</span><br></pre></td></tr></table></figure><p>被同步服务器执行如下命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl stop ntpd</span><br><span class="line">sudo systemctl disable ntpd</span><br><span class="line">sudo systemctl stop ntpd</span><br><span class="line">sudo systemctl disable ntpd</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>配置1分钟与时间服务器同步一次</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo crontab -e</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*/1 * * * * /usr/sbin/ntpdate hadoop102</span><br></pre></td></tr></table></figure><p>接下来修改同步时间服务器时间等待自动同步判断是否修改成功</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;Hadoop是什么&lt;ul&gt;
+&lt;li&gt;Hadoop Apache基金会开发的分布式系统基础架构 Hadoop主要解决海量数据的存储</summary>
+      
+    
+    
+    
+    <category term="hadoop" scheme="https://fangechao6.github.io/categories/hadoop/"/>
+    
+    
+    <category term="hadoop" scheme="https://fangechao6.github.io/tags/hadoop/"/>
+    
+    <category term="大数据" scheme="https://fangechao6.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>监视属性</title>
+    <link href="https://fangechao6.github.io/posts/b1c89471.html"/>
+    <id>https://fangechao6.github.io/posts/b1c89471.html</id>
+    <published>2023-07-25T01:35:26.000Z</published>
+    <updated>2023-08-06T06:53:07.891Z</updated>
+    
+    
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算属性</title>
+    <link href="https://fangechao6.github.io/posts/f3cd2de6.html"/>
+    <id>https://fangechao6.github.io/posts/f3cd2de6.html</id>
+    <published>2023-07-25T01:20:00.000Z</published>
+    <updated>2023-08-06T06:52:56.249Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vue计算属性"><a href="#vue计算属性" class="headerlink" title="vue计算属性"></a>vue计算属性</h1><ol><li>定义：要用的属性不存在，要通过已有的属性计算得来的</li><li>原理：底层就借助了Object.defineproperty方法提供的getter和setter</li><li>get函数什么时候执行<ul><li>初次读取时会执行一次</li><li>当依赖的数据发生改变时会被再次调用</li></ul></li><li>优势：与methods实现相比，内部有缓存机制（复用），效率更高，调试方便。</li><li>备注<ul><li>计算属性最终会出现在vm上，直接读取使用即可</li><li>如果计算属性要被修改，那必须写set函数去响应修改。且set中要引起计算时依赖的数据发生变化<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;root&quot;</span>&gt;</span></span><br><span class="line">  姓：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;firstName&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">  名：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;lastName&quot;</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">  姓名<span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;&#123;fullName&#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">const</span> vm = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">      <span class="attr">el</span>:<span class="string">&#x27;#root&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">      <span class="attr">data</span>: &#123;</span></span><br><span class="line"><span class="language-javascript">          <span class="attr">firstName</span>:<span class="string">&#x27;张&#x27;</span>,</span></span><br><span class="line"><span class="language-javascript">          <span class="attr">lastName</span>:<span class="string">&#x27;三&#x27;</span></span></span><br><span class="line"><span class="language-javascript">      &#125;,</span></span><br><span class="line"><span class="language-javascript">      <span class="attr">computed</span>:&#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//完整写法</span></span></span><br><span class="line"><span class="language-javascript">          <span class="comment">// fullName:&#123;</span></span></span><br><span class="line"><span class="language-javascript">          <span class="comment">//     get()&#123;</span></span></span><br><span class="line"><span class="language-javascript">          <span class="comment">//             return this.firstName+&quot;-&quot;+this.lastName</span></span></span><br><span class="line"><span class="language-javascript">          <span class="comment">//     &#125;,</span></span></span><br><span class="line"><span class="language-javascript">          <span class="comment">//     set(value)&#123;</span></span></span><br><span class="line"><span class="language-javascript">          <span class="comment">//       const arr = value.split(&#x27;-&#x27;)</span></span></span><br><span class="line"><span class="language-javascript">          <span class="comment">//       this.firstName = arr[0]</span></span></span><br><span class="line"><span class="language-javascript">          <span class="comment">//       this.lastName = arr[1]</span></span></span><br><span class="line"><span class="language-javascript">          <span class="comment">//     &#125;</span></span></span><br><span class="line"><span class="language-javascript">          <span class="comment">//  &#125;</span></span></span><br><span class="line"><span class="language-javascript">        </span></span><br><span class="line"><span class="language-javascript">        <span class="comment">//简写</span></span></span><br><span class="line"><span class="language-javascript">        <span class="title function_">fullName</span>(<span class="params"></span>)&#123;</span></span><br><span class="line"><span class="language-javascript">              <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">firstName</span>+<span class="string">&#x27;-&#x27;</span>+<span class="variable language_">this</span>.<span class="property">lastName</span></span></span><br><span class="line"><span class="language-javascript">           &#125;</span></span><br><span class="line"><span class="language-javascript">            </span></span><br><span class="line"><span class="language-javascript">      &#125;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">  &#125;)</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ul></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;vue计算属性&quot;&gt;&lt;a href=&quot;#vue计算属性&quot; class=&quot;headerlink&quot; title=&quot;vue计算属性&quot;&gt;&lt;/a&gt;vue计算属性&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;定义：要用的属性不存在，要通过已有的属性计算得来的&lt;/li&gt;
+&lt;li&gt;原理：底层就借助了</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue简介</title>
+    <link href="https://fangechao6.github.io/posts/a231bb16.html"/>
+    <id>https://fangechao6.github.io/posts/a231bb16.html</id>
+    <published>2023-07-24T00:42:05.000Z</published>
+    <updated>2023-08-06T06:53:11.611Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vue特点"><a href="#vue特点" class="headerlink" title="vue特点"></a>vue特点</h1><ol><li>采用组件化模式，提高代码复用率、且让代码更好维护</li><li>声明式编码，让编码人员无需直接操作DOM，提高开发效率</li><li>使用虚拟DOM+优秀的Diff算法，尽量复用DOM节点<h1 id="MVVM模型"><a href="#MVVM模型" class="headerlink" title="MVVM模型"></a>MVVM模型</h1></li><li>M模型：对应data中的数据</li><li>V视图：模板</li><li>VM视图模型：vue实例对象    <img src="https://hexo-butterfly-bucket.oss-cn-shanghai.aliyuncs.com/img/mdImg/20230725082917.png" alt=""><h4 id="观察发现"><a href="#观察发现" class="headerlink" title="观察发现:"></a>观察发现:</h4></li><li>data中所有属性，最后都出现在vm身上</li><li>vm上所有的属性及原型上所有的属性，在vue模板中都可以直接使用</li></ol><h1 id="事件的基本使用："><a href="#事件的基本使用：" class="headerlink" title="事件的基本使用："></a>事件的基本使用：</h1><ol><li>使用v-on:xxx或@xxx绑定事件，其中xxx是事件名</li><li>事件的回调需要配置在methods对象中，最终会在vm上</li><li>methods中配置的函数，不要用箭头函数！箭头函数会改变this的指向</li><li>methods中配置的函数，都是被vue所管理的函数，this志向是vm或实例对象</li><li>@click=”demo”和@click=”demo($event)”效果一致，但后者传参不会丢失event<ul><li><h2 id="事件修饰符"><a href="#事件修饰符" class="headerlink" title="事件修饰符   ."></a>事件修饰符   .</h2></li></ul></li><li>prevent: 组织默认事件(常用)</li><li>stop: 阻止事件冒泡(常用)</li><li>once: 事件只触发一次(常用)</li><li>capture: 使用事件的捕获模式</li><li>self: 只有event.target是当前操作的元素时才触发事件</li><li>passive: 事件的默认行为立即执行，无需等待事件回调执行完毕<ul><li><h2 id="Vue中的按键："><a href="#Vue中的按键：" class="headerlink" title="Vue中的按键："></a>Vue中的按键：</h2></li></ul></li><li>常用按键别名<ul><li>回车 =&gt; enter</li><li>删除 =&gt; delete(捕获“删除”和“退格”)</li><li>退出 =&gt; esc</li><li>空格 =&gt; space</li><li>换行 =&gt; tab  </li><li>上   =&gt; up</li><li>下   =&gt; down</li><li>左   =&gt; left</li><li>右   =&gt; right </li></ul></li><li>vue 中未提供的别名案件，可以使用按键原始key值去绑定，但注意要转为kebab=case(短横线命名)</li><li>系统修饰键(用法特殊):ctrl alt shift meta（窗户键）<ul><li>配合keyup使用：按下修饰键的同时，再按下其他键，随后释放其他键，事件才能被触发。</li><li>配合keydown使用：正常触发事件</li></ul></li><li>也可以使用keyCode去指定具体按键（不推荐）</li><li>Vue.config.keyCodes.自定义键名 = 键码，可以去定制按键别名 </li><li>修饰符可以连续写 都可以级联的方式例如 @click.prevent.stop可以阻止冒泡也可以阻止跳转，@keyup.ctrl必须按下ctrl和y才触发  和与顺序无关</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;vue特点&quot;&gt;&lt;a href=&quot;#vue特点&quot; class=&quot;headerlink&quot; title=&quot;vue特点&quot;&gt;&lt;/a&gt;vue特点&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;采用组件化模式，提高代码复用率、且让代码更好维护&lt;/li&gt;
+&lt;li&gt;声明式编码，让编码人员无需直接操作D</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://fangechao6.github.io/tags/vue/"/>
     
   </entry>
   
