@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fangechao6.github.io/posts/dd6a6641.html</loc>
+    
+    <lastmod>2024-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fangechao6.github.io/posts/b78651e0.html</loc>
     
     <lastmod>2024-02-29</lastmod>
@@ -184,7 +193,7 @@
 
   <url>
     <loc>https://fangechao6.github.io/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -192,63 +201,63 @@
   
   <url>
     <loc>https://fangechao6.github.io/tags/vmware/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/tags/centos/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/tags/linux/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/tags/hadoop/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/tags/vue/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/tags/HDFS/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/tags/yarn/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/tags/Java/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -257,42 +266,42 @@
   
   <url>
     <loc>https://fangechao6.github.io/categories/vmware/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/categories/vue/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/categories/hadoop/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/categories/hadoop/HDFS/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fangechao6.github.io/categories/java/</loc>
-    <lastmod>2024-02-29</lastmod>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
