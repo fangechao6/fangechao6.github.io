@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://fangechao6.github.io/fonts/iconfont.json</loc>
+    
+    <lastmod>2024-11-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fangechao6.github.io/posts/0.html</loc>
     
     <lastmod>2024-11-22</lastmod>
@@ -237,15 +246,6 @@
   
   <url>
     <loc>https://fangechao6.github.io/posts/f3cd2de6.html</loc>
-    
-    <lastmod>2024-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fangechao6.github.io/fonts/iconfont.json</loc>
     
     <lastmod>2024-11-22</lastmod>
     
